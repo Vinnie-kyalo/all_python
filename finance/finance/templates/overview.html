@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflation Overview</title>
+</head>
+<body>
+    <h1>Inflation Overview</h1>
+
+    <h2>Food Inflation</h2>
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Value</th>
+        </tr>
+        {% for item in food_inflation %}
+        <tr>
+            <td>{{ item.month.month }}</td>
+            <td>{{ item.value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+ 
+    
+</body>
+</html>
